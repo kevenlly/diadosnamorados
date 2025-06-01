@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Feliz Dia dos Namorados, meu Levi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, black, #8B0000);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #FF4C4C;
+            animation: pulse 2s infinite;
+        }
+
+        .message {
+            max-width: 800px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+            animation: fadeInUp 1s ease;
+        }
+
+        audio {
+            margin-top: 20px;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .heart {
+            width: 60px;
+            height: 60px;
+            background: red;
+            position: relative;
+            transform: rotate(-45deg);
+            margin: 20px auto;
+            animation: beat 1s infinite;
+        }
+
+        .heart:before, .heart:after {
+            content: "";
+            width: 60px;
+            height: 60px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart:before {
+            top: -30px;
+            left: 0;
+        }
+
+        .heart:after {
+            left: 30px;
+            top: 0;
+        }
+
+        @keyframes beat {
+            0%, 100% { transform: scale(1) rotate(-45deg); }
+            50% { transform: scale(1.1) rotate(-45deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Feliz dia dos namorados, meu Levi</h1>
+    <div class="heart"></div>
+<div class="message">Você é a melhor parte do meu dia.</div>
+<div class="message">Desde que te conheci, tudo ficou mais colorido.</div>
+<div class="message">Obrigado por ser meu porto seguro.</div>
+<div class="message">Com você, até os dias ruins têm um brilho especial.</div>
+<div class="message">Amo cada detalhe seu.</div>
+<div class="message">Você é meu lar, meu amor, meu Levi.</div>
+<div class="message">Feliz Dia dos Namorados!</div>
+
+    <audio controls autoplay loop>
+        <source src="musica.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+</body>
+</html>
